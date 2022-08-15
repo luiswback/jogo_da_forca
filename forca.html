@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="container">
+
+    <div id="img">
+
+    </div>
+
+    <div id="palavraSecreta">
+        <!-- Palavraa tela-->
+    </div>
+
+
+    <div id="teclado">
+        <div class="teclas">
+            <button id="tecla A" onclick=" VerificarLetraEscolhida('A')">A</button>
+            <button id="tecla B" onclick=" VerificarLetraEscolhida('B')">B</button>
+            <button id="tecla C" onclick=" VerificarLetraEscolhida('C')">C</button>
+            <button id="tecla D" onclick=" VerificarLetraEscolhida('D')">D</button>
+            <button id="tecla E" onclick=" VerificarLetraEscolhida('E')">E</button>
+            <button id="tecla F" onclick=" VerificarLetraEscolhida('F')">F</button>
+            <button id="tecla G" onclick=" VerificarLetraEscolhida('G')">G</button>
+            <button id="tecla H" onclick=" VerificarLetraEscolhida('H')">H</button>
+            <button id="tecla I" onclick=" VerificarLetraEscolhida('I')">I</button>
+        </div>
+
+        <div class="teclas">
+            <button id="tecla J" onclick=" VerificarLetraEscolhida('J')">J</button>
+            <button id="tecla K" onclick=" VerificarLetraEscolhida('K')">K</button>
+            <button id="tecla L" onclick=" VerificarLetraEscolhida('L')">L</button>
+            <button id="tecla M" onclick=" VerificarLetraEscolhida('M')">M</button>
+            <button id="tecla N" onclick=" VerificarLetraEscolhida('N')">N</button>
+            <button id="tecla O" onclick=" VerificarLetraEscolhida('O')">O</button>
+            <button id="tecla P" onclick=" VerificarLetraEscolhida('P')">P</button>
+            <button id="tecla Q" onclick=" VerificarLetraEscolhida('Q')">Q</button>
+            <button id="tecla R" onclick=" VerificarLetraEscolhida('R')">R</button>
+        </div>
+
+        <div class="teclas">
+            <button id="tecla S" onclick=" VerificarLetraEscolhida('S')">S</button>
+            <button id="tecla T" onclick=" VerificarLetraEscolhida('T')">T</button>
+            <button id="tecla U" onclick=" VerificarLetraEscolhida('U')">U</button>
+            <button id="tecla V" onclick=" VerificarLetraEscolhida('V')">V</button>
+            <button id="tecla W" onclick=" VerificarLetraEscolhida('W')">W</button>
+            <button id="tecla X" onclick=" VerificarLetraEscolhida('X')">X</button>
+            <button id="tecla Y" onclick=" VerificarLetraEscolhida('Y')">Y</button>
+            <button id="tecla Z" onclick=" VerificarLetraEscolhida('Z')">Z</button>
+            <button id="btnRestart">🎮</button>
+        </div>
+    </div>
+
+    <div id="categoria">
+        <!--    categoria da palavra -->
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titulo"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="texto" id="texto">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <h4> created by luisWback &copy; </h4>
+    <script src="forca.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</footer>
+
+</body>
+</html>
